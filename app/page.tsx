@@ -1,6 +1,5 @@
-import Image from "next/image";
 import Link from "next/link";
-import mark from "@/public/logo-mark.png";
+import { LogoMark } from "@/components/Logo";
 import { categories, ranges, rangesFor } from "@/lib/data";
 import { ArrowLink, CategoryCard, Container, CtaBand, RangeCard, SectionHeading } from "@/components/ui";
 
@@ -111,7 +110,7 @@ export default function Home() {
             {/* Embroidered patch */}
             <div className="absolute left-1/2 top-1/2 flex size-[36%] -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full bg-paper shadow-[0_24px_50px_-20px_rgb(28_27_25/0.55)] ring-8 ring-paper">
               <div className="flex size-full items-center justify-center rounded-full border-2 border-dashed border-tan/70 p-3">
-                <Image src={mark} alt="Westward Clothing emblem" className="size-full rounded-full" priority />
+                <LogoMark id="ww-mark-hero" className="size-full" />
               </div>
             </div>
           </div>

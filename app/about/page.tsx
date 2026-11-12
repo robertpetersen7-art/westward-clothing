@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import Image from "next/image";
-import mark from "@/public/logo-mark.png";
+import { LogoMark } from "@/components/Logo";
 import { Container, CtaBand, PageHero } from "@/components/ui";
 
 export const metadata: Metadata = {
@@ -43,7 +42,7 @@ export default function AboutPage() {
         <Container className="grid gap-14 lg:grid-cols-[1fr_1.3fr] lg:gap-20">
           <div className="relative mx-auto w-full max-w-sm">
             <div className="twill stitch flex aspect-square items-center justify-center rounded-full p-14">
-              <Image src={mark} alt="Westward Clothing emblem" className="rounded-full" />
+              <span className="block w-full rounded-full bg-paper p-3"><LogoMark id="ww-mark-about" className="block w-full" /></span>
             </div>
           </div>
           <div className="space-y-6 text-lg leading-relaxed text-ink-soft">
